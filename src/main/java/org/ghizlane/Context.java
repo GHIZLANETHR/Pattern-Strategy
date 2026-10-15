@@ -1,7 +1,7 @@
 package org.ghizlane;
 
 public class Context {
-    private Strategy strategy;
+    private Strategy strategy= new StrategyDefault();
     public void effectuerOperation(){
         System.out.println("****************");
         strategy.operationStrategy();

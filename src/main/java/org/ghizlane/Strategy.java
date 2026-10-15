@@ -1,5 +1,5 @@
 package org.ghizlane;
 
-public interface Strategy {
+interface Strategy {
     void operationStrategy();
 }
