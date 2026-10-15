@@ -1,24 +1,15 @@
 package org.ghizlane;
 
 public class Context {
-    public void effectuerOperation(int type){
-        if(type==1){
-            System.out.println("*************************");
-            System.out.println("---------Strategy 1-------------");
-            System.out.println("======================");
+    private Strategy strategy;
+    public void effectuerOperation(){
+        System.out.println("****************");
+        strategy.operationStrategy();
+        System.out.println("=======================");
 
-        }else if(type==2){
-            System.out.println("************************");
-            System.out.println("---------Strategy 2-------------");
-            System.out.println("======================");
-        }else if(type==3){
-            System.out.println("************************");
-            System.out.println("---------Strategy 3-------------");
-            System.out.println("======================");
-        }else{
-            System.out.println("************************");
-            System.out.println("---------Strategy default-------------");
-            System.out.println("======================");
-        }
+    }
+
+    public void setStrategy(Strategy strategy) {
+        this.strategy = strategy;
     }
 }
